@@ -16,8 +16,6 @@ server.get('/json', (req, res) => {
 })
 
 server.use((req,res)=>{
-    //res.send('Erro!!!');
-    //para mostrar o status code correto
     res.status(404).send("<h1>Erro!!</h1>");
 })
 server.listen(3000);
